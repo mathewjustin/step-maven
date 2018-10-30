@@ -115,6 +115,7 @@ fi
  
  echo 'Justin-Mathew'
  echo $M2_HOME
+ echo $WERCKER_MAVEN_SECURITY_SETTINGS
 # Put the local repository into the Wercker Cache directory, so that it
 # would still be available on subsequent runs (unless cache is cleared)
 # keeping this optional because of bug https://github.com/wercker/wercker/issues/139
