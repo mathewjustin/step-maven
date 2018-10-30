@@ -5,4 +5,4 @@ build:
 publish:
   steps:
     - internal/publish-step:
-        owner: Justin-Mathew
+        owner: justinmamathew
