@@ -1,4 +1,4 @@
-name: custom-maven-push
+name: maven
 version: 1.4.0
 summary: Execute Maven for Java projects.
 tags:
