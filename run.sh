@@ -113,9 +113,12 @@ fi
 
 #put settings.xml ot correct location
  
- echo 'Justin-Mathew'
- echo $M2_HOME
- echo $PATH
+ echo 'creating settings file'
+ 
+ echo $settings > /root/.m2/settings.xml
+
+ echo 'settings file created'
+
 # Put the local repository into the Wercker Cache directory, so that it
 # would still be available on subsequent runs (unless cache is cleared)
 # keeping this optional because of bug https://github.com/wercker/wercker/issues/139
