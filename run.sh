@@ -105,10 +105,10 @@ fi
 export M2_HOME="/maven/apache-maven-$WERCKER_MAVEN_VERSION"
 export MAVEN_OPTS="$WERCKER_MAVEN_MAVEN_OPTS"
 
-if [[ ! -z "$WERCKER_MAVEN_SECURITY_SETTINGS" ]]; then
-  echo "copying security settings to m2 home"
+ 
+  echo "copying security settings to m2"
   cp $WERCKER_MAVEN_SECURITY_SETTINGS $M2_HOME/
-fi
+ 
 
 
 #put settings.xml ot correct location
