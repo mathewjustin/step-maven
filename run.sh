@@ -100,7 +100,7 @@ else
   POM="-f $WERCKER_MAVEN_POM"
 fi
 
-# Set the M2_HOME
+# Set the M2_HOME 
 # Put security-settings.xml in the right place
 export M2_HOME="/maven/apache-maven-$WERCKER_MAVEN_VERSION"
 export MAVEN_OPTS="$WERCKER_MAVEN_MAVEN_OPTS"
@@ -108,6 +108,10 @@ export MAVEN_OPTS="$WERCKER_MAVEN_MAVEN_OPTS"
 if [[ ! -z "$WERCKER_MAVEN_SECURITY_SETTINGS" ]]; then
   cp $WERCKER_MAVEN_SECURITY_SETTINGS $M2_HOME/
 fi
+
+
+#put settings.xml ot correct location
+echo $settings
 
 # Put the local repository into the Wercker Cache directory, so that it
 # would still be available on subsequent runs (unless cache is cleared)
